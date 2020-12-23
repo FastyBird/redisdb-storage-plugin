@@ -15,6 +15,7 @@
 
 namespace FastyBird\RedisDbStoragePlugin\DI;
 
+use FastyBird\RedisDbStoragePlugin\Client;
 use FastyBird\RedisDbStoragePlugin\Connections;
 use FastyBird\RedisDbStoragePlugin\Models;
 use Nette;
@@ -83,6 +84,9 @@ class RedisDbStoragePluginExtension extends DI\CompilerExtension
 				'username' => $configuration->connection->username,
 				'password' => $configuration->connection->password,
 			]);
+
+		$builder->addDefinition($this->prefix('client'))
+			->setType(Client\Client::class);
 
 		$builder->addDefinition($this->prefix('model.statesManagerFactory'))
 			->setType(Models\StatesManagerFactory::class);
