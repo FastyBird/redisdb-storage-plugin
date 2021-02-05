@@ -87,7 +87,6 @@ class StatesManager implements IStatesManager
 			$state = States\StateFactory::create($this->entity, $raw);
 
 		} catch (Throwable $ex) {
-			var_dump($ex->getMessage());
 			$this->logger->error('[FB:PLUGIN:REDISDB] Key could not be created', [
 				'exception' => [
 					'message' => $ex->getMessage(),
