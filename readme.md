@@ -1,6 +1,6 @@
 # FastyBird Redis storage plugin
 
-[![Build Status](https://badgen.net/github/checks/FastyBird/redisdb-storage-plugin/master?cache=300&style=flast-square)](https://travis-ci.com/FastyBird/redisdb-storage-plugin)
+[![Build Status](https://badgen.net/github/checks/FastyBird/redisdb-storage-plugin/master?cache=300&style=flast-square)](https://github.com/FastyBird/redisdb-storage-plugin/actions)
 [![Code coverage](https://badgen.net/coveralls/c/github/FastyBird/redisdb-storage-plugin?cache=300&style=flast-square)](https://coveralls.io/r/FastyBird/redisdb-storage-plugin)
 ![PHP](https://badgen.net/packagist/php/FastyBird/redisdb-storage-plugin?cache=300&style=flast-square)
 [![Licence](https://badgen.net/packagist/license/FastyBird/redisdb-storage-plugin?cache=300&style=flast-square)](https://packagist.org/packages/FastyBird/redisdb-storage-plugin)
