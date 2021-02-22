@@ -82,7 +82,7 @@ class StatesManager implements IStatesManager
 		Utils\ArrayHash $values
 	): States\IState {
 		try {
-			$raw = $this->createKey($id, $values, $this->entity::CREATE_FIELDS);
+			$raw = $this->createKey($id, $values, $this->entity::getCreateFields());
 
 			$state = States\StateFactory::create($this->entity, $raw);
 
@@ -113,7 +113,7 @@ class StatesManager implements IStatesManager
 		Utils\ArrayHash $values
 	): States\IState {
 		try {
-			$raw = $this->updateKey($state, $values, $state::UPDATE_FIELDS);
+			$raw = $this->updateKey($state, $values, $state::getUpdateFields());
 
 			$updatedState = States\StateFactory::create(get_class($state), $raw);
 

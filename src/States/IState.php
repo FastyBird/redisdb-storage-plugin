@@ -28,11 +28,15 @@ use Ramsey\Uuid;
 interface IState
 {
 
-	public const CREATE_FIELDS = [
-		'id',
-	];
+	/**
+	 * @return string[]
+	 */
+	public static function getCreateFields(): array;
 
-	public const UPDATE_FIELDS = [];
+	/**
+	 * @return string[]
+	 */
+	public static function getUpdateFields(): array;
 
 	/**
 	 * @return Uuid\UuidInterface

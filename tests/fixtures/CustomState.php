@@ -10,17 +10,6 @@ use FastyBird\RedisDbStoragePlugin\States;
 class CustomState extends States\State
 {
 
-	public const CREATE_FIELDS = [
-		0         => 'id',
-		1         => 'value',
-		'created' => null,
-	];
-
-	public const UPDATE_FIELDS = [
-		'value',
-		'updated',
-	];
-
 	/** @var string|null */
 	private ?string $value = null;
 
@@ -86,6 +75,29 @@ class CustomState extends States\State
 	public function setUpdated(?string $updated): void
 	{
 		$this->updated = $updated;
+	}
+
+	/**
+	 * {@inheritDoc}
+	 */
+	public static function getCreateFields(): array
+	{
+		return [
+			0         => 'id',
+			1         => 'value',
+			'created' => null,
+		];
+	}
+
+	/**
+	 * {@inheritDoc}
+	 */
+	public static function getUpdateFields(): array
+	{
+		return [
+			'value',
+			'updated',
+		];
 	}
 
 	/**

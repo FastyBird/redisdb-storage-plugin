@@ -70,6 +70,24 @@ class State implements IState
 	/**
 	 * {@inheritDoc}
 	 */
+	public static function getCreateFields(): array
+	{
+		return [
+			'id',
+		];
+	}
+
+	/**
+	 * {@inheritDoc}
+	 */
+	public static function getUpdateFields(): array
+	{
+		return [];
+	}
+
+	/**
+	 * {@inheritDoc}
+	 */
 	public function toArray(): array
 	{
 		return [
