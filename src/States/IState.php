@@ -29,12 +29,12 @@ interface IState
 {
 
 	/**
-	 * @return string[]|array<int|string, string|false|null>
+	 * @return array<string>
 	 */
 	public static function getCreateFields(): array;
 
 	/**
-	 * @return string[]|array<int|string, string|false|null>
+	 * @return array<int|string, string|bool|null>
 	 */
 	public static function getUpdateFields(): array;
 
