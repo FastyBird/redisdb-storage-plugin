@@ -159,7 +159,7 @@ class StatesManager implements IStatesManager
 	/**
 	 * @param Uuid\UuidInterface $id
 	 * @param Utils\ArrayHash $values
-	 * @param mixed[] $fields
+	 * @param array<string> $fields
 	 *
 	 * @return string
 	 */
@@ -237,7 +237,7 @@ class StatesManager implements IStatesManager
 	/**
 	 * @param States\IState $state
 	 * @param Utils\ArrayHash $values
-	 * @param string[] $fields
+	 * @param array<int|string, string|bool|null> $fields
 	 *
 	 * @return string
 	 */
